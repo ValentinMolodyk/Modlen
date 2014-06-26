@@ -14,20 +14,25 @@
     border-top-left-radius 15px 15px
     -webkit-border-top-left-radius 15px 15px
     text-indent 17px
+    line-height: 28px
 
-.l-summary__2
-  position relative
-  top -9px
-.l-summary__2-i
+
+.summary-i
   background #fbf7ee
   border-top-left-radius 15px 15px
   -webkit-border-top-left-radius 15px 15px
   padding 26px 10px 22px 18px
+  position relative
+  top -9px
+
+
+
 
 
 
 /* price общий + модификации */
 .price
+  clear fix
   &__amount
     font-size: 45px
     line-height 40px
@@ -43,3 +48,20 @@
     padding-left 18px
     white-space pre
 
+  &__like-icon
+    display inline-block
+    width 34px
+    height 28px
+    background url("../../../img/icon/like.png") 100% 0
+    position: relative;
+    top 7px;
+    left -3px;
+
+.l-price__l
+  float left
+  width 50%
+
+.l-price__r
+  float right
+  width 50%
+  text-align center
