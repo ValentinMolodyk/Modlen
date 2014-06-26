@@ -99,8 +99,31 @@
         &:after
           border-top none
 
+  &__arrow
+    display inline-block
+    vertical-align middle
+
+  &__info
+    display inline-block
+    vertical-align middle
+    font-size: 15px
+    &_fw
+      font-weight bold
+
   &__arrow-up
     display block
-    background url("../../../img/icon/arrow-crystal-up.png")
-    width 22px
-    height 19px
+    background url("../../../img/icon/arrow-up-crystal.png")
+    width 12px
+    height 10px
+
+    &:hover
+      opacity .6
+
+  &__arrow-down
+    display block
+    background url("../../../img/icon/arrow-down-crystal.png")
+    width 12px
+    height 10px
+
+    &:hover
+      opacity .6
