@@ -11,7 +11,7 @@
       color #006902
 
     &:hover,&:active
-      color darken(#006902, 20%)
+      opacity .8
       border-bottom none
 
   &__rotator
@@ -19,6 +19,25 @@
     background url("../../../img/icon/rotator.gif")
     width 43px
     height 23px
+
+  &__like
+    text-decoration none
+    display block
+    .fa-heart
+      display none
+    .fa-heart-o
+      font-size: 25px
+      color #c41131
+      opacity .4
+
+    &:hover
+      .fa-heart-o
+        display none
+      .fa-heart
+        display inline-block
+        font-size: 25px
+        color #c41131
+
 
 
 
