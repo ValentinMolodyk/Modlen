@@ -2,7 +2,6 @@
   background #fbf7ee
   border-top-left-radius 15px 15px
   border-bottom-left-radius 15px 15px
-  -webkit-border-bottom-left-radius 15px 15px
 
   &__head
     background: -moz-linear-gradient(top,  #9fcc93 0%, #86bb77 100%); /* FF3.6+ */
@@ -16,9 +15,15 @@
     height 36px
     color #ffffff
     border-top-left-radius 15px 15px
-    -webkit-border-top-left-radius 15px 15px
     text-indent 17px
     line-height: 28px
+
+    &_br-top
+      border-top-right-radius 15px 15px
+  &_br
+    border-top-right-radius 15px 15px
+    border-bottom-right-radius 15px 15px
+
 
   &__pay-variant
     float right
@@ -33,11 +38,15 @@
 .summary-i
   background #fbf7ee
   border-top-left-radius 15px 15px
-  -webkit-border-top-left-radius 15px 15px
-
   padding 26px 10px 5px 18px
   position relative
   top -9px
+  &_br-top
+    border-top-right-radius 15px 15px
+
+  &_pt
+   padding-top 20px
+
 
 
 
@@ -74,16 +83,27 @@
       background-position -1% 0
       opacity .5
 
+.l-summary__2
+  .l-price__l
+    float left
+    width 50%
 
-.l-price__l
-  float left
-  width 50%
+  .l-price__r
+    float right
+    width 50%
+    text-align center
 
-.l-price__r
-  float right
-  width 50%
-  text-align center
+  /*block 2 - Total!!*/
+  .l-summary__l, .l-summary__c, .l-summary__r
+    display inline-block
+    vertical-align bottom
 
+  .l-summary__c
+    margin-left 33px
+  .l-summary__r
+    margin 0 0 5px 19px
+    .summary__info
+      font-style italic
 
  /*price end*/
 
