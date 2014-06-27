@@ -70,21 +70,22 @@
       left 0
       opacity .0
       display block
-
-      transition left 1s ease-out 0.1s, opacity 0.5s easy-in
-      -webkit-transition left 1s ease-out 0.1s, opacity 0.5s easy-in
-      -o-transition left 1s ease-out 0.1s, opacity 0.5s easy-in
-      -moz-transition left 1s ease-out 0.1s, opacity 0.5s easy-in
+      z-index -1
+      transition 0.5s ease 0.1s
+      -webkit-transition  0.5s ease 0.1s
+      -o-transition  0.5s ease 0.1s
+      -moz-transition 0.5s ease 0.1s
 
       &__item
         width 30px
         padding-left 4px
         border-radius 10px 0 0 10px
-        &:hover
+        &:hover, &:active
           background-color #dcdde2
       &__link
         font-size 23px
         line-height 30px
+
         &_color-1
           color #fca61b
         &_color-2
@@ -94,11 +95,12 @@
         &_color-4
           color #5eb15f
 
-    &:hover
+    &:hover, &:active
       .color-choice
         display block
         opacity 1
         left -33px
+        z-index 0
 
 
 
