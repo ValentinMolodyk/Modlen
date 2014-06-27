@@ -1,0 +1,44 @@
+.item
+  background: #FFFFFF
+  &__img-wrap
+    border 1px solid #f3f3f3
+
+  &__name-link
+    border-bottom 2px solid #deead2
+    text-decoration none
+    padding-bottom 2px
+    &:link, &:visited
+      color #006902
+
+    &:hover,&:active
+      color darken(#006902, 20%)
+      border-bottom none
+
+  &__rotator
+    display block
+    background url("../../../img/icon/rotator.gif")
+    width 43px
+    height 23px
+
+
+
+    /*раскладка*/
+.l-item__l, .l-item__c, .l-item__r
+  display inline-block
+  vertical-align middle
+
+.l-item
+  &__l
+    .price__amount
+      font-size: 16px
+      font-weight: bold
+      white-space pre
+      line-height 0
+    .fa-eur
+      font-size: 15px
+  &__3
+    .l-item-i
+      padding 2px 0 5px 0
+
+  &__c
+    margin-left 15px
