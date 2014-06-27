@@ -13,22 +13,22 @@
   &:hover, &:active, &:focus
     outline none
 
-
-  &:before
-    content ""
-    position absolute
-    height 3px
-    width 78%
-    bottom -2px
-    right 10%
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(57,108,3,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
-    box-shadow 0 1px 15px 0px #000000
-    -webkit-box-shadow 0 1px 15px 0px #000000
+  &_box-shadow
+    &:before
+      content ""
+      position absolute
+      height 3px
+      width 66%
+      bottom -2px
+      right 17%
+      background: -moz-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(57,108,3,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+      background: radial-gradient(ellipse at center,  rgba(57,108,3,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+      box-shadow 0 1px 15px 0px #000000
+      -webkit-box-shadow 0 1px 15px 0px #000000
 
 
   &_green
@@ -47,7 +47,7 @@
     &:focus
       outline none
 
-  &_shadow
+  &_in-shadow
     display block
     padding 3px 13px
     box-shadow 0 2px 3px 0px #000000
