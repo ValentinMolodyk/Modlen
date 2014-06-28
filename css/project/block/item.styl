@@ -1,24 +1,32 @@
 .item
   /*background: #FFFFFF*/
   &__img-wrap
-    border 1px solid #f3f3f3
     text-align center
     &_b_none
       border none
+    img
+      border 1px solid #f3f3f3
+      position relative
+      bottom -5px
 
 
 
 
-  &__name-link
-    border-bottom 2px solid #deead2
+  &__img-link
     text-decoration none
-    padding-bottom 2px
     &:link, &:visited
       color #006902
 
     &:hover,&:active
-      opacity .8
-      border-bottom none
+      color red
+  &__name-link-wrap
+    padding 5px 0 0
+    text-align left
+  &__name-link
+    border-bottom 2px solid #deead2
+    display inline-block
+
+
 
   &__rotator
     display block
@@ -43,16 +51,21 @@
         display inline-block
         font-size: 25px
         color #c41131
+        opacity .5
 
   &__like-on
     text-decoration none
     display block
+    height 26px
     .fa-heart-o
       display none
     .fa-heart
       display inline-block
-      font-size: 25px
+      font-size: 24px
       color #c41131
+      transition 0.2s ease-in-out
+      &:hover
+        font-size: 26px
 
   &__img-link_bs
     img
@@ -108,7 +121,7 @@
 
 
 
-    /*раскладка*/
+    /*раскладка изменения контента*/
 .l-item__l, .l-item__c, .l-item__r, .l-item__c1
   display inline-block
   vertical-align middle
@@ -122,9 +135,9 @@
       line-height 0
     .fa-eur
       font-size: 15px
-  &__3
+  &__2
     .l-item-i
-      padding 2px 0 5px 0
+      padding 0 0 5px 0
 
   &__c
     margin-left 15px
