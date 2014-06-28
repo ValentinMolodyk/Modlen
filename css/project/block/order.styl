@@ -2,12 +2,14 @@
 
   &_bt
     border-top 15px solid #d8e4da
-    border-top-left-radius 20px 20px
+    border-top-left-radius 15px 15px
 
 
 .box-i
-  border-top-left-radius 20px 20px
+  border-top-left-radius 15px 15px
   background-color #f4efe9
+  border-bottom-right-radius 15px 15px
+  box-shadow 0 30px 102px -53px #000
 .l-box-i
   position relative
   top -11px
@@ -30,3 +32,35 @@
 
     &_fs_18
       font-size: 18px
+
+  &__text
+    padding 2px 0 14px
+
+  &__measure
+    u
+      &:after
+        border-top 1px solid #006902
+        bottom -1px
+
+    &:link, &:visited
+      color #006902
+    &:hover, &:active
+      opacity .8
+      u
+        &:after
+          border-top none
+
+  &__measure_c_red
+    u
+      &:after
+        border-top 1px solid #e12519
+        bottom -1px
+
+    &:link, &:visited
+      color #e12519
+    &:hover, &:active
+      opacity .8
+      u
+        &:after
+          border-top none
+
