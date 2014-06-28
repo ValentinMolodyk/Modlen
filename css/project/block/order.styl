@@ -46,3 +46,102 @@
       color #006902
     &:hover, &:active
       color #e12519
+
+  &__color-switch
+    text-decoration none
+    font-style italic
+    position relative
+    margin-left 27px
+    &:before
+      content ""
+      position absolute
+      width 12px
+      height 12px
+      background-color #d04298
+      border-radius 50%
+      top 2px
+      left -15px
+    &:link, &:visited
+      color #000000
+    &:hover, &:active, &:focus
+      opacity .8
+
+
+  &__like-off
+    text-decoration none
+    display block
+    .fa-heart
+      display none
+    .fa-heart-o
+      font-size: 25px
+      color #c41131
+      opacity .4
+
+    &:hover
+      .fa-heart-o
+        display none
+      .fa-heart
+        display inline-block
+        font-size: 25px
+        color #c41131
+        opacity .5
+
+  &__like-on
+    text-decoration none
+    display block
+    height 26px
+    .fa-heart-o
+      display none
+    .fa-heart
+      display inline-block
+      font-size: 24px
+      color #c41131
+      transition 0.2s ease-in-out
+      &:hover
+        font-size: 26px
+
+  &__control-bar
+    float left
+    padding-right 69px
+  &__img
+    float right
+    text-align center
+
+  &__img-link
+    display block
+
+  &__rotator
+    display inline-block
+    width 35px
+    height 19px
+    background url("../../../img/icon/rotator-smaller.png")
+
+  &__cross
+    display block
+    .fa-times
+      font-size: 15px
+      color #e22418
+    &_mb_19
+      margin-bottom 19px
+  &__like-num
+    display block
+    &_mb_15
+      margin-bottom 15px
+
+
+
+
+/*разметка*/
+.l-order
+  &__l
+    display table-cell
+    vertical-align bottom
+  &__l-i
+    clear fix
+    padding 0 80px 0 0
+  &__c
+    display table-cell
+    vertical-align bottom
+  &__r
+    display table-cell
+    vertical-align bottom
