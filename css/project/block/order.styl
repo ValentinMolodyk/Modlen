@@ -37,10 +37,11 @@
     padding 2px 0 14px
 
   &__measure
+    font-size: 15px
     u
       &:after
         border-top 1px solid #006902
-        bottom -1px
+        bottom 0px
 
     &:link, &:visited
       color #006902
@@ -61,10 +62,17 @@
       border-radius 50%
       top 2px
       left -15px
+      transition 0.4s ease-out
     &:link, &:visited
       color #000000
     &:hover, &:active, &:focus
-      opacity .8
+      opacity .9
+      &:before
+        width 14px
+        height 14px
+        top 1px
+        left -17px
+
 
 
   &__like-off
@@ -102,7 +110,7 @@
 
   &__control-bar
     float left
-    padding-right 69px
+    padding-right 71px
   &__img
     float right
     text-align center
@@ -118,17 +126,48 @@
 
   &__cross
     display block
+    text-align center
+    height 27px
+    transition 0.2s ease-in-out
     .fa-times
-      font-size: 15px
+      font-size: 22px
       color #e22418
-    &_mb_19
-      margin-bottom 19px
+      transition 0.3s ease-in-out
+      &:link,&:visited,&:focus
+        outline none
+        color #e22418
+      &:hover,&:active
+        font-size: 25px
+
+    &_mb_9
+      margin-bottom 9px
+
+
   &__like-num
     display block
+    background-color #96bf7b
+    text-decoration none
+    text-align center
+    padding 2px 4px
+    border-radius 5px
+    transition 0.4s ease-out
+    &:link,&:visited,&:focus
+      outline none
+      color #ffffff
+    &:hover,&:active
+      opacity .8
+      color #000000
+
     &_mb_15
       margin-bottom 15px
 
-
+.m-price_fs
+  line-height: 0
+  font-size: 35px
+  .fa-usd
+    font-size: 17px;
+    position: relative;
+    top: -10px;
 
 
 /*разметка*/
@@ -145,3 +184,6 @@
   &__r
     display table-cell
     vertical-align bottom
+  &__r-i
+    padding 0 0 145px 23px
+
