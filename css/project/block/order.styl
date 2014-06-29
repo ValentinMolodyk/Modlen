@@ -19,6 +19,24 @@
 
 .order
 
+  &__close
+    position relative
+    &:before
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(254,253,251,0.8);
+      content: "";
+      z-index 1
+    &:after
+      content ""
+      position absolute
+      height 2px
+      background-color #e3241c
+      width 100%
+
   &__name-link
     border-bottom 2px solid #deead2
     text-decoration none
@@ -58,11 +76,14 @@
       position absolute
       width 12px
       height 12px
-      background-color #d04298
+      background-color #0000fe
       border-radius 50%
       top 2px
       left -15px
-      transition 0.4s ease-out
+      transition 0.2s ease-out
+      -webkit-transition  0.2s ease-out
+      -o-transition  0.2s ease-out
+      -moz-transition 0.2s ease-out
     &:link, &:visited
       color #000000
     &:hover, &:active, &:focus
@@ -105,6 +126,9 @@
       font-size: 24px
       color #c41131
       transition 0.2s ease-in-out
+      -webkit-transition  0.2s ease-in-out
+      -o-transition  0.2s ease-in-out
+      -moz-transition 0.2s ease-in-out
       &:hover
         font-size: 26px
 
@@ -129,15 +153,21 @@
     text-align center
     height 27px
     transition 0.2s ease-in-out
+    -webkit-transition  0.2s ease-in-out
+    -o-transition  0.2s ease-in-out
+    -moz-transition 0.2s ease-in-out
     .fa-times
       font-size: 22px
       color #e22418
       transition 0.3s ease-in-out
+      -webkit-transition  0.3s ease-in-out
+      -o-transition  0.3s ease-in-out
+      -moz-transition 0.3s ease-in-out
       &:link,&:visited,&:focus
         outline none
         color #e22418
       &:hover,&:active
-        font-size: 25px
+        opacity .7
 
     &_mb_9
       margin-bottom 9px
@@ -151,6 +181,9 @@
     padding 2px 4px
     border-radius 5px
     transition 0.4s ease-out
+    -webkit-transition  0.4s ease-out
+    -o-transition  0.4s ease-out
+    -moz-transition 0.4s ease-out
     &:link,&:visited,&:focus
       outline none
       color #ffffff
@@ -161,13 +194,18 @@
     &_mb_15
       margin-bottom 15px
 
-.m-price_fs
+.m-order_price
   line-height: 0
   font-size: 35px
   .fa-usd
     font-size: 17px;
     position: relative;
     top: -10px;
+
+.m-order_btn
+  padding 10px 0 0 0
+  .btn
+    z-index 1
 
 
 /*разметка*/
@@ -178,6 +216,8 @@
   &__l-i
     clear fix
     padding 0 80px 0 0
+    &_pl
+      padding 0 80px 0 95px
   &__c
     display table-cell
     vertical-align bottom
