@@ -10,10 +10,17 @@
   background-color #f4efe9
   border-bottom-right-radius 15px 15px
   box-shadow 0 30px 102px -53px #000
+  &_mail
+    border-top-left-radius 15px 15px
+    background-color #f4efe9
+    border-bottom-right-radius 15px 15px
+    box-shadow 0 16px 66px -17px #000
+
 .l-box-i
   position relative
   top -11px
   padding 23px 20px 17px 38px
+
 
 
 
@@ -33,21 +40,24 @@
     &:after
       content ""
       position absolute
+      display block
       height 2px
+      left 90px
       background-color #e3241c
-      width 102.8%
+      width 92.5%
       z-index 1
-      transform-origin 0 -100%
-      -webkit-transform-origin 0 -100%
-      -o-transform-origin 0 -100%
-      -moz-transform-origin 0 -100%
-      -ms-transform-origin 0 -100%
 
-      transform rotate(-13.5deg)
-      -moz-transform rotate(-13.5deg)
-      -ms-transform rotate(-13.5deg)
-      -webkit-transform rotate(-13.5deg)
-      -o-transform rotate(-13.5deg)
+      transform-origin bottom left
+      -webkit-transform-origin bottom left
+      -o-transform-origin bottom left
+      -moz-transform-origin bottom left
+      -ms-transform-origin bottom left
+
+      transform rotate(-14.4deg)
+      -moz-transform rotate(-14.4deg)
+      -ms-transform rotate(-14.4deg)
+      -webkit-transform rotate(-14.4deg)
+      -o-transform rotate(-14.4deg)
 
 
   &__name-link
@@ -230,7 +240,8 @@
     clear fix
     padding 0 80px 0 0
     &_pl
-      padding 0 80px 0 95px
+      padding 0 80px 0 90px
+      clear fix
   &__c
     display table-cell
     vertical-align bottom
@@ -239,4 +250,7 @@
     vertical-align bottom
   &__r-i
     padding 0 0 145px 23px
+    &_price
+      padding 0 0 102px 23px
+
 
