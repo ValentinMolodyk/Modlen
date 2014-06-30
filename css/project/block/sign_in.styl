@@ -64,9 +64,43 @@
 
     /*popup-sign*/
 
+.popup-sign
+  &__registration
+    font-size: 12px
+    u
+      &:after
+        bottom 0px
+    &:link, &:visited
+      color #006902
+    &:hover, &:active
+      color #e12519
+
+  &__reset-pass
+    font-size: 12px
+    u
+      &:after
+        bottom 0px
+    &:link, &:visited
+      color #006902
+    &:hover, &:active
+      color #e12519
+    &_ml
+      margin-left 10px
+
+  &__modlen-link
+    display inline-block
+    padding-bottom 8px
+    font-size: 12px
+    u
+      &:after
+        bottom 0px
+    &:link, &:visited
+      color #006902
+    &:hover, &:active
+      color #e12519
 
 
-.popup_sign-i
+.popup-sign-i
   border 3px solid #aec99e
   border-top-right-radius 15px 20px
   border-bottom-left-radius 20px 15px
@@ -79,7 +113,16 @@
     .fa-times
       color #df2317
       font-size: 14px
+      &:hover
+        opacity .7
 
+/*разметка*/
+.l-popup-sign-i
+  padding 0 0 0 19px
+.l-popup-sign__3-i
+  padding 10px 0 0 76px
+.l-popup-sign__4-i
+  padding 8px 0 19px 6px
 /*Временная ссылка для разметки!!!!!!!    Поставить картинку Facebook!!!!!*/
 .facebook-img
   display block
