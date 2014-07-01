@@ -122,39 +122,27 @@
 
   &__like-off
     text-decoration none
+    background url("../../../img/icon/like.svg") 100% 0 no-repeat
+    background-size cover
     display block
-    .fa-heart
-      display none
-    .fa-heart-o
-      font-size: 25px
-      color #c41131
-      opacity .4
-
+    width 25px
+    height 21px
     &:hover
-      .fa-heart-o
-        display none
-      .fa-heart
-        display inline-block
-        font-size: 25px
-        color #c41131
-        opacity .5
+      background-position 0 0
+      opacity .5
+
 
   &__like-on
     text-decoration none
+    background url("../../../img/icon/like.svg") 0 0 no-repeat
+    background-size cover
     display block
-    height 26px
-    .fa-heart-o
-      display none
-    .fa-heart
-      display inline-block
-      font-size: 24px
-      color #c41131
-      transition 0.2s ease-in-out
-      -webkit-transition  0.2s ease-in-out
-      -o-transition  0.2s ease-in-out
-      -moz-transition 0.2s ease-in-out
-      &:hover
-        font-size: 26px
+    width 25px
+    height 21px
+    &:hover
+      width 28px
+      height 23px
+      background-position 1% 0
 
   &__control-bar
     float left

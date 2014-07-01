@@ -100,16 +100,27 @@
     padding-left 18px
     white-space pre
 
-  &__like-icon
-    display inline-block
-    width 34px
-    height 28px
-    background url("../../../img/icon/like.png") 100% 0
-    position relative
-    top 7px
-    left -3px
+  &__like-off
+    text-decoration none
+    background url("../../../img/icon/like.svg") 100% 0 no-repeat
+    background-size cover
+    display block
+    width 30px
+    height 25px
     &:hover
-      background-position -1% 0
+      background-position 0 0
+      opacity .5
+  &__like-on
+    text-decoration none
+    background url("../../../img/icon/like.svg") 0 0 no-repeat
+    background-size cover
+    display block
+    width 31px
+    height 25px
+    &:hover
+      width 33px
+      height 27px
+      background-position 1% 0
 
 .l-summary__2
   .l-price__l
@@ -118,8 +129,7 @@
 
   .l-price__r
     float right
-    width 50%
-    text-align center
+    margin 9px 57px 0 0
 
   /*block 2 - Total!!*/
   .l-summary__l, .l-summary__c, .l-summary__r
@@ -225,6 +235,6 @@
       text-indent 154px
   &__r-i
     padding 4px 35px 6px 25px
-    background: url("../../../img/icon/arrow-long.png") center left no-repeat
+    background: url("../../../img/icon/arrow-long.svg") center left no-repeat
     background-size 100%
 
